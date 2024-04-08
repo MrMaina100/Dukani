@@ -28,7 +28,7 @@ export default function CartPage() {
 
   const handlePaymentIntent = async () => {
     try {
-      const res = await fetch('https://dukani.railway.internal/create-checkout-session', {
+      const res = await fetch('https://dukani-production.up.railway.app/create-checkout-session', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
