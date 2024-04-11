@@ -3,9 +3,13 @@ require('dotenv').config();
 const express = require('express');
 const app = express();
 const cors = require('cors');
+const corsOptions = {
+  origin:'https://dukani-alpha.vercel.app/',
+  optionsSuccessStatus: 204,
+}
 
 app.use(express.json());
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(express.static('public'));
 
 const stripe = require('stripe')(process.env.STRIPE_PRIVATE_KEY);

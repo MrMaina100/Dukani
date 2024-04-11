@@ -36,6 +36,7 @@ export default function CartPage() {
         body: JSON.stringify({
           items: cartproducts,
         }),
+        credentials:'include'
       });
 
       if (res.ok) {
