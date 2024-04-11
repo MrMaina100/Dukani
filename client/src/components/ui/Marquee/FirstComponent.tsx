@@ -1,4 +1,4 @@
-// @ts-ignore
+
 import Marquee from 'react-fast-marquee';
 import { imageDatasetOne } from '@/data/ImageData';
 
